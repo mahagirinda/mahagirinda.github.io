@@ -1345,7 +1345,7 @@ input[type="text"] {
   }
 }
 
-#fh5co-about {
+/* #fh5co-about {
   background-image: url(../images/svg/circle-bottom.svg) !important;
   background-position: bottom right;
   background-attachment: unset;
@@ -1367,6 +1367,6 @@ input[type="text"] {
   background-attachment: unset;
   background-repeat: no-repeat;
   background-size: 70vw;
-}
+} */
 
 /*# sourceMappingURL=style.css.map */
