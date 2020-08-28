@@ -1353,7 +1353,13 @@ input[type="text"] {
   margin: 0px;
 }
 
-.carousel-row {  
+.carousel-image {
+  width: 600px;
+  height: 600px;
+}
+
+.carousel-row {
+  padding-top: 50px !important;
   padding: 10px;
 }
 
