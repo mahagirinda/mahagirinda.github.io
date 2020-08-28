@@ -1345,6 +1345,29 @@ input[type="text"] {
   }
 }
 
+.portfolio-title {
+  color: white;
+}
+
+.carousel-body {
+  margin: 0px;
+}
+
+.carousel-row {  
+  padding: 10px;
+}
+
+.carousel-inner, .carousel-control, .carousel-body {
+  border-radius: 10px;
+}
+
+hr {
+  width: 65%;
+  margin: 0px;
+  padding: 10px;
+  opacity: 0.6;
+}
+
 /* #fh5co-about {
   background-image: url(../images/svg/circle-bottom.svg) !important;
   background-position: bottom right;
