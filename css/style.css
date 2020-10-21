@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   width: 100%;
   background-image: url(../images/background.jpg);
+  background-size: cover;
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -228,6 +229,10 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header .display-tc .fh5co-social-icons li a i,
 .fh5co-cover .display-tc .fh5co-social-icons li a i {
   font-size: 30px;
+}
+
+.feature-left {
+  margin-top: 20px !important;
 }
 
 #fh5co-features {
@@ -713,6 +718,23 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.img-learned-adobe {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 70px auto;
+}
+
+.img-learned {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 70px auto;
+}
+
+.desc-service-text {
+  font-size: 10px !important;
+  font-weight: 60 !important;
 }
 
 .work {
@@ -1364,7 +1386,7 @@ input[type="text"] {
 }
 
 .carousel-inner, .carousel-control, .carousel-body {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 hr {
@@ -1373,29 +1395,3 @@ hr {
   padding: 10px;
   opacity: 0.6;
 }
-
-/* #fh5co-about {
-  background-image: url(../images/svg/circle-bottom.svg) !important;
-  background-position: bottom right;
-  background-attachment: unset;
-  background-repeat: no-repeat;
-  background-size: 85vw;
-}
-
-#fh5co-resume {
-  background-image: url(../images/svg/square-bottom.svg) !important;
-  background-position: bottom right;
-  background-attachment: unset;
-  background-repeat: no-repeat;
-  background-size: 85vw;
-}
-
-#fh5co-footer {
-  background-image: url(../images/svg/triangle-bottom.svg) !important;
-  background-position: bottom right;
-  background-attachment: unset;
-  background-repeat: no-repeat;
-  background-size: 70vw;
-} */
-
-/*# sourceMappingURL=style.css.map */
