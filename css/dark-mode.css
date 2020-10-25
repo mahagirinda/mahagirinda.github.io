@@ -1,0 +1,85 @@
+[data-theme="dark"] {
+  background-color: rgb(27, 27, 27) !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+/* Optimized */
+
+[data-theme="dark"] #fh5co-header .overlay,
+.fh5co-cover .overlay {
+  background-image: url(../images/background-dark.jpg) !important;
+}
+
+[data-theme="dark"] #fh5co-about h2 {
+  color: white !important;
+}
+
+[data-theme="dark"] #fh5co-about .fh5co-social-icons li a {
+  background: #0a0a0a !important;
+}
+
+[data-theme="dark"] #fh5co-about span {
+  color: white !important;
+}
+
+[data-theme="dark"] #fh5co-work img, #fh5co-work a {
+  -webkit-filter:brightness(85%);
+  -moz-filter:brightness(85%);
+  filter:brightness(85%);
+}
+
+[data-theme="dark"] #fh5co-resume h2 {
+  color: white !important;
+}
+
+[data-theme="dark"] .timeline-badge {
+  background-color: #0a0a0a !important;
+}
+
+[data-theme="dark"] .timeline:before {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] #fh5co-resume .timeline-title {
+  color: white !important;
+}
+
+[data-theme="dark"] #fh5co-resume .company {
+  color: rgb(173, 173, 173) !important;
+}
+
+[data-theme="dark"] #fh5co-resume span {
+  color: white !important;
+}
+
+[data-theme="dark"] #fh5co-features .feature-left .icon {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] #fh5co-features .feature-left .icon i {
+  color: white !important;
+}
+
+[data-theme="dark"] #fh5co-skills h2 {
+  color: white !important;
+}
+
+[data-theme="dark"] #fh5co-skills .img-learned {
+  fill: white !important;
+}
+
+[data-theme="dark"] .fh5co-bg-dark {
+  background: #0a0a0a !important;
+}

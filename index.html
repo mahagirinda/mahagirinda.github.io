@@ -18,6 +18,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link rel="stylesheet" href="css/dark-mode.css">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -35,7 +36,8 @@
 		
 	<div class="fh5co-loader"></div>
 	
-	<div id="page">	
+	<div id="page">
+	<img src="images/background-dark.jpg" style="display: none !important;">
 	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"
 		data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
@@ -50,10 +52,10 @@
 							<h3><span>Developer / Editor / Designer</span></h3>
 							<p>
 								<ul class="fh5co-social-icons">									
-									<li><a target="_blank" href="https://www.instagram.com/mahagirinda"><i class="icon-instagram"></i></a></li>
-									<li><a target="_blank" href="https://www.facebook.com/mahagirinda"><i class="icon-facebook2"></i></a></li>
-									<li><a target="_blank" href="https://www.twitter.com/mahagirinda"><i class="icon-twitter2"></i></a></li>
-									<li><a target="_blank" href="https://www.github.com/mahagirinda"><i class="icon-github"></i></a></li>
+									<li class="social-icon"><a target="_blank" href="https://www.instagram.com/mahagirinda"><i class="icon-instagram"></i></a></li>
+									<li class="social-icon"><a target="_blank" href="https://www.facebook.com/mahagirinda"><i class="icon-facebook2"></i></a></li>
+									<li class="social-icon"><a target="_blank" href="https://www.twitter.com/mahagirinda"><i class="icon-twitter2"></i></a></li>
+									<li class="social-icon"><a target="_blank" href="https://www.github.com/mahagirinda"><i class="icon-github"></i></a></li>
 								</ul>
 							</p>
 							<div class="arrow bounce"></div>
@@ -210,7 +212,6 @@
 							  <li data-target="#carousel-brosur" data-slide-to="2"></li>
 							  <li data-target="#carousel-brosur" data-slide-to="3"></li>
 							  <li data-target="#carousel-brosur" data-slide-to="4"></li>
-							  <!-- <li data-target="#carousel-brosur" data-slide-to="4"></li> -->
 							</ol>
 						  
 							<div class="carousel-inner" role="listbox">
@@ -220,9 +221,6 @@
 							  <div class="item">
 								<img class="carousel-image" src="images/brosur-2.jpg" alt="MH Projects Collab">
 							  </div>
-							  <!-- <div class="item">
-								<img class="carousel-image" src="images/brosur-3.jpg" alt="MH Projects Promo">
-							  </div> -->
 							  <div class="item">
 								<img class="carousel-image" src="images/brosur-4.jpg" alt="Udayana Farmasi">
 							  </div>
@@ -396,7 +394,7 @@
 		</div>
 	</div>	
 
-	<div id="fh5co-features" class="animate-box">
+	<div id="fh5co-features" class="fh5co-bg-dark">
 		<div class="container">
 			<div class="services-padding">
 				<div class="row">
@@ -533,7 +531,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Development Tools</h2>
+					<h2>Frequently Used DEV Tools</h2>
 				</div>
 			</div>
 			<div class="row row-pb-md">
@@ -554,9 +552,6 @@
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
 					<img class="img-learned-lg" src="images/logos/sourcetree-1.svg" data-toggle="tooltip" data-placement="bottom" title="SourceTree">
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
-					<img class="img-learned" src="images/logos/cpanel.svg" data-toggle="tooltip" data-placement="bottom" title="Cpanel">
 				</div>
 			</div>
 		</div>
@@ -587,6 +582,10 @@
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+
+	<div class="darkmode">
+		<a id="darkSwitch" role="button" class="darkmode-switch"><i id="darkmoodIcon"></i></a>
 	</div>	
 
 	<!-- jQuery -->
@@ -601,6 +600,50 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
+
+	<script>
+		var isDarkMode;
+		initTheme();
+
+		$('#darkSwitch').click(function () {
+			if (isDarkMode == false) {
+				isDarkMode = true;				
+				document.body.setAttribute("data-theme", "dark");
+				localStorage.setItem("darkSwitch", "dark");
+				swithIcon();
+			} else {
+				isDarkMode = false;				
+				document.body.removeAttribute("data-theme");
+				localStorage.removeItem("darkSwitch");
+				swithIcon();
+			}
+		});
+
+		function swithIcon() {
+			var imgDark = '../images/background-dark.jpg';
+			var imgLight = '../images/background.jpg';
+			if (isDarkMode) {        
+				$('#darkmoodIcon').addClass('icon-moon');
+				$('#darkmoodIcon').removeClass('icon-sun');
+			} else {
+				$('#darkmoodIcon').addClass('icon-sun');
+				$('#darkmoodIcon').removeClass('icon-moon');
+			}
+		}		
+
+		function initTheme() {
+			const isDarkModeBefore = null !== localStorage.getItem("darkSwitch") && "dark" === localStorage.getItem("darkSwitch");
+			if (isDarkModeBefore) {
+				isDarkMode = true;
+				document.body.setAttribute("data-theme", "dark");
+				swithIcon();
+			} else {
+				isDarkMode = false;
+				document.body.removeAttribute("data-theme");
+				swithIcon();
+			}
+		}
+	</script>
 	
 	<!-- Main -->
 	<script src="js/main.js"></script>

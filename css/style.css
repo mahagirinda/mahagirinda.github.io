@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   width: 100%;
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/background.jpg) !important;
   background-size: cover;
 }
 #fh5co-header .display-t,
@@ -1087,7 +1087,7 @@ input[type="text"] {
 .gototop {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 70px;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
@@ -1100,8 +1100,8 @@ input[type="text"] {
   visibility: visible;
 }
 .gototop a {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: table;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -1112,13 +1112,44 @@ input[type="text"] {
   border-radius: 50%;
 }
 .gototop a i {
-  height: 50px;
+  height: 40px;
   display: table-cell;
   vertical-align: middle;
 }
 .gototop a:hover, .gototop a:active, .gototop a:focus {
   text-decoration: none;
   outline: none;
+}
+
+.darkmode {
+  opacity: 1 !important;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: visible !important;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.darkmode a {
+  width: 40px;
+  height: 40px;
+  display: table;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.darkmode a i {
+  height: 40px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .btn {
