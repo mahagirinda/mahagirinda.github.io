@@ -788,22 +788,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transform: translate3d(0, 15px, 0);
   transform: translate3d(0, 15px, 0);
 }
-/* 
-@media screen and (max-width: 768px) {
-  .work .desc {
-    opacity: 1;
-    background: rgba(255, 255, 255, 0.6);
-  }
-  .work .desc h3 {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  .work .desc span {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-*/
+
 .work:hover .desc {
   opacity: 1;
 }
@@ -823,6 +808,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   float: left;
   width: 100%;
+  margin-top: -70px !important;
 }
 #fh5co-started .fh5co-heading {
   margin-bottom: 0;
@@ -1425,4 +1411,23 @@ hr {
   margin: 0px;
   padding: 10px;
   opacity: 0.6;
+}
+
+.click-animation {
+  animation: pulse 1s 1 ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow:  0 0 0 0 rgba(0, 0, 0, 0.8),
+                 0 0 0 0 rgb(0, 0, 0);
+  }
+  50% {
+    box-shadow:  0 0 0 0.65em rgba(0, 0, 0, 0.8),
+                 0 0 0 1.5em rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow:  0 0 0 0 rgba(0, 0, 0, 0.8),
+                 0 0 0 0 rgb(0, 0, 0);
+  }
 }

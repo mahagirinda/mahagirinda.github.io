@@ -524,7 +524,7 @@
 					<img class="img-learned-lg" src="images/logos/spring-3.svg" data-toggle="tooltip" data-placement="bottom" title="Spring Boot Java Framework">
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-6 text-center animate-box">
-					<img class="img-learned" src="images/logos/git.svg" data-toggle="tooltip" data-placement="bottom" title="Git Versioning Management">
+					<img class="img-learned" src="images/logos/git.svg" data-toggle="tooltip" data-placement="bottom" title="Git Version Control">
 				</div>
 			</div>
 		</div>
@@ -574,7 +574,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<p>&copy; 2020 <br> <small>Developed & Designed by Maha Girinda</small></p>
+					<p>
+						&copy; 2020 <br> 
+						<small>
+							Developed & Designed with <i class="icon-heart"></i> <br>
+							by Maha Girinda
+						</small>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -586,8 +592,8 @@
 
 	<div class="darkmode">
 		<a id="darkSwitch" role="button" class="darkmode-switch"><i id="darkmoodIcon"></i></a>
-	</div>	
-
+	</div>
+	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -657,7 +663,15 @@
 	<!-- Tooltip Handle -->
 	<script>
 		$(document).ready(function(){
-		$('[data-toggle="tooltip"]').tooltip();
+			$('[data-toggle="tooltip"]').tooltip();
+
+			const dist = document.querySelector('#darkSwitch');
+			document.querySelector('#darkSwitch').addEventListener('click', () => {
+				dist.classList.remove('click-animation');
+				window.requestAnimationFrame(function() {
+					dist.classList.add('click-animation');
+				});
+			});
 		});
 	</script>
 
