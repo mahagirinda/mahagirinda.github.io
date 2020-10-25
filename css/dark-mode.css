@@ -40,6 +40,18 @@
   filter:brightness(85%);
 }
 
+[data-theme="dark"] .work .desc {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+[data-theme="dark"] .work .desc h3{
+  color: white !important;
+}
+
+[data-theme="dark"] .work .desc span{
+  color: rgb(212, 212, 212) !important;
+}
+
 [data-theme="dark"] #fh5co-resume h2 {
   color: white !important;
 }

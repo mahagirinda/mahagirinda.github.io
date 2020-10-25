@@ -1414,7 +1414,7 @@ hr {
 }
 
 .click-animation {
-  animation: pulse 1s 1 ease-out;
+  animation: pulse 0.66s 1 ease-out;
 }
 
 @keyframes pulse {
@@ -1423,11 +1423,7 @@ hr {
                  0 0 0 0 rgb(0, 0, 0);
   }
   50% {
-    box-shadow:  0 0 0 0.65em rgba(0, 0, 0, 0.8),
-                 0 0 0 1.5em rgba(0, 0, 0, 0);
-  }
-  100% {
-    box-shadow:  0 0 0 0 rgba(0, 0, 0, 0.8),
-                 0 0 0 0 rgb(0, 0, 0);
+    box-shadow:  0 0 0 0.33em rgba(0, 0, 0, 0.8),
+                 0 0 0 0.1em rgba(0, 0, 0, 0);
   }
 }
