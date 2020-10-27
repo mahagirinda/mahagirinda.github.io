@@ -256,8 +256,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-features .feature-left .icon {
   display: table;
   text-align: center;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   margin: 0 auto;
   background: #fff;
   margin-bottom: 20px;
@@ -267,10 +267,10 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
 }
 #fh5co-features .feature-left .icon i {
-  font-size: 50px;
+  font-size: 32px;
   display: table-cell;
   vertical-align: middle;
-  height: 100px;
+  height: 75px;
   color: #39475C !important;
 }
 #fh5co-features .feature-left .feature-copy {
@@ -419,7 +419,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-heading {
-  margin-bottom: 5em;
+  margin-bottom: 4em;
 }
 .fh5co-heading.fh5co-heading-sm {
   margin-bottom: 2em;
@@ -724,6 +724,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 65px;
   height: 65px;
   margin: 0 auto 70px auto;
+  margin-top: 18px !important;
 }
 
 .img-learned {
@@ -769,7 +770,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; 
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .work .desc h3 {
@@ -1326,7 +1327,7 @@ input[type="text"] {
 }
 
 .col-padding {
-  padding: 6px !important;
+  padding: 10px !important;
   margin: 0px !important;
 }
 

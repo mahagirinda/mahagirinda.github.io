@@ -15,8 +15,6 @@
   background-color: #eee !important;
 }
 
-/* Optimized */
-
 [data-theme="dark"] #fh5co-header .overlay,
 .fh5co-cover .overlay {
   background-image: url(../images/background-dark.jpg) !important;

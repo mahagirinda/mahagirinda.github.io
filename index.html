@@ -11,7 +11,7 @@
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content="Welcome to My Page"/>
-	<meta property="og:image" content="https://mahagirinda.github.io/images/user-1.jpg"/>
+	<meta property="og:image" content="https://mahagirinda.github.io/favicon.ico"/>
 	<meta property="og:url" content="mahagirinda.github.com"/>
 	<meta property="og:site_name" content="Maha Girinda Praba"/>
 	<meta property="og:description" content="Hello there! Here is my Portfolio Web Page. Lets get in touch if you were interested with my services"/>
@@ -606,74 +606,12 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
-
-	<script>
-		var isDarkMode;
-		initTheme();
-
-		$('#darkSwitch').click(function () {
-			if (isDarkMode == false) {
-				isDarkMode = true;				
-				document.body.setAttribute("data-theme", "dark");
-				localStorage.setItem("darkSwitch", "dark");
-				swithIcon();
-			} else {
-				isDarkMode = false;				
-				document.body.removeAttribute("data-theme");
-				localStorage.removeItem("darkSwitch");
-				swithIcon();
-			}
-		});
-
-		function swithIcon() {
-			var imgDark = '../images/background-dark.jpg';
-			var imgLight = '../images/background.jpg';
-			if (isDarkMode) {        
-				$('#darkmoodIcon').addClass('icon-light-bulb');
-				$('#darkmoodIcon').removeClass('icon-moon');
-			} else {
-				$('#darkmoodIcon').addClass('icon-moon');
-				$('#darkmoodIcon').removeClass('icon-light-bulb');
-			}
-		}		
-
-		function initTheme() {
-			const isDarkModeBefore = null !== localStorage.getItem("darkSwitch") && "dark" === localStorage.getItem("darkSwitch");
-			if (isDarkModeBefore) {
-				isDarkMode = true;
-				document.body.setAttribute("data-theme", "dark");
-				swithIcon();
-			} else {
-				isDarkMode = false;
-				document.body.removeAttribute("data-theme");
-				swithIcon();
-			}
-		}
-	</script>
-	
+	<!-- Dark Mode Handler -->
+	<script src="js/dark-mode.js"></script>	
+	<!-- Boostrap Handler  -->
+	<script src="js/boostrap-handler.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
-	<!-- Carousel Handle -->
-	<script>
-		$('#carousel-logo-editing').carousel({ interval: 2000 });
-		$('#carousel-brosur').carousel({ interval: 3000 });
-	</script>
-
-	<!-- Tooltip Handle -->
-	<script>
-		$(document).ready(function(){
-			$('[data-toggle="tooltip"]').tooltip();
-
-			const dist = document.querySelector('#darkSwitch');
-			document.querySelector('#darkSwitch').addEventListener('click', () => {
-				dist.classList.remove('click-animation');
-				window.requestAnimationFrame(function() {
-					dist.classList.add('click-animation');
-				});
-			});
-		});
-	</script>
 
 	</body>
 </html>
