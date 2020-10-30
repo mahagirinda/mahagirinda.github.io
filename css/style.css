@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   width: 100%;
-  background-image: url(../images/background.jpg) !important;
+  background-image: url(../images/background.svg) !important;
   background-size: cover;
 }
 #fh5co-header .display-t,
@@ -1090,7 +1090,7 @@ input[type="text"] {
   width: 40px;
   height: 40px;
   display: table;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(49, 61, 78, 0.9);
   color: #fff;
   text-align: center;
   -webkit-border-radius: 50%;
@@ -1125,7 +1125,7 @@ input[type="text"] {
   width: 40px;
   height: 40px;
   display: table;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(49, 61, 78, 0.9);
   color: #fff;
   text-align: center;
   -webkit-border-radius: 50%;
@@ -1414,17 +1414,25 @@ hr {
   opacity: 0.6;
 }
 
+:root {
+  --primary-color: rgba(55, 69, 88, 0.8);
+  --secondary-color:rgb(55, 69, 88);
+}
+
+[data-theme="dark"] {  
+  --primary-color: rgba(0, 0, 0, 0.8);
+  --secondary-color:rgb(0, 0, 0);
+}
+
 .click-animation {
   animation: pulse 0.66s 1 ease-out;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow:  0 0 0 0 rgba(0, 0, 0, 0.8),
-                 0 0 0 0 rgb(0, 0, 0);
+    box-shadow:  0 0 0 0 var(--primary-color), 0 0 0 0 var(--secondary-color);
   }
   50% {
-    box-shadow:  0 0 0 0.33em rgba(0, 0, 0, 0.8),
-                 0 0 0 0.1em rgba(0, 0, 0, 0);
+    box-shadow:  0 0 0 0.33em var(--primary-color), 0 0 0 0.1em var(--secondary-color);
   }
 }

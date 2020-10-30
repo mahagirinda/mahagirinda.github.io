@@ -17,7 +17,7 @@
 
 [data-theme="dark"] #fh5co-header .overlay,
 .fh5co-cover .overlay {
-  background-image: url(../images/background-dark.jpg) !important;
+  background-image: url(../images/background-dark.svg) !important;
 }
 
 [data-theme="dark"] #fh5co-about h2 {
@@ -92,4 +92,12 @@
 
 [data-theme="dark"] .fh5co-bg-dark {
   background: #0a0a0a !important;
+}
+
+[data-theme="dark"] .darkmode a {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+[data-theme="dark"] .gototop a {
+  background: rgba(0, 0, 0, 0.8);
 }

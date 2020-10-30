@@ -16,8 +16,6 @@ $('#darkSwitch').click(function () {
 });
 
 function swithIcon() {
-    var imgDark = '../images/background-dark.jpg';
-    var imgLight = '../images/background.jpg';
     if (isDarkMode) {
         $('#darkmoodIcon').addClass('icon-light-bulb');
         $('#darkmoodIcon').removeClass('icon-moon');
