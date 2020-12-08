@@ -16,3 +16,35 @@ $(document).ready(function(){
         });
     });
 });
+
+$(window).scroll(function () {
+    if ($('#about-me-text').isInViewport()) {
+        $('#about-me-text').addClass('typewriter');
+    }
+
+    if ($('#my-works-text').isInViewport()) {
+        $('#my-works-text').addClass('typewriter-card');
+    }
+
+    if ($('#my-resume-text').isInViewport()) {
+        $('#my-resume-text').addClass('typewriter');
+    }
+
+    if ($('#my-service-text').isInViewport()) {
+        $('#my-service-text').addClass('typewriter-card');
+    }
+
+    if ($('#get-in-text').isInViewport()) {
+        $('#get-in-text').addClass('typewriter-card');
+    }
+});
+
+$.fn.isInViewport = function () {
+    let elementTop = $(this).offset().top;
+    let elementBottom = elementTop + $(this).outerHeight();
+
+    let viewportTop = $(window).scrollTop();
+    let viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};

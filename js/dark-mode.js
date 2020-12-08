@@ -17,11 +17,11 @@ $('#darkSwitch').click(function () {
 
 function swithIcon() {
     if (isDarkMode) {
-        $('#darkmoodIcon').addClass('icon-light-bulb');
-        $('#darkmoodIcon').removeClass('icon-moon');
-    } else {
         $('#darkmoodIcon').addClass('icon-moon');
         $('#darkmoodIcon').removeClass('icon-light-bulb');
+    } else {
+        $('#darkmoodIcon').addClass('icon-light-bulb');
+        $('#darkmoodIcon').removeClass('icon-moon');
     }
 }		
 

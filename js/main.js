@@ -25,13 +25,10 @@
 
 	
 	var fullHeight = function() {
-
-		if ( !isMobile.any() ) {
+		$('.js-fullheight').css('height', $(window).height());
+		$(window).resize(function(){
 			$('.js-fullheight').css('height', $(window).height());
-			$(window).resize(function(){
-				$('.js-fullheight').css('height', $(window).height());
-			});
-		}
+		});
 	};
 
 	// Parallax
@@ -147,3 +144,14 @@
 
 
 }());
+
+console.log(
+	"Thank you for your interest on my source code! \n" +
+	"if you have any further offers and information for me, just contact me at \n" +
+	"\n" +
+	"Email : mahagirinda@gmail.com \n" +
+	"Social Media : mahagirinda \n"+
+	"\n" +
+	"Best regards! \n" +
+	"Maha Girinda"		
+);
