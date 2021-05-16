@@ -15,24 +15,24 @@
   background-color: #eee !important;
 }
 
-[data-theme="dark"] #fh5co-header .overlay,
-.fh5co-cover .overlay {
+[data-theme="dark"] #profile-header .overlay,
+.profile-cover .overlay {
   background-image: url(../images/background-dark.svg) !important;
 }
 
-[data-theme="dark"] #fh5co-about h2 {
+[data-theme="dark"] #profile-about h2 {
   color: white !important;
 }
 
-[data-theme="dark"] #fh5co-about .fh5co-social-icons li a {
+[data-theme="dark"] #profile-about .profile-social-icons li a {
   background: #0a0a0a !important;
 }
 
-[data-theme="dark"] #fh5co-about span {
+[data-theme="dark"] #profile-about span {
   color: white !important;
 }
 
-[data-theme="dark"] #fh5co-work img, #fh5co-work a {
+[data-theme="dark"] #profile-work img, #profile-work a {
   -webkit-filter:brightness(85%);
   -moz-filter:brightness(85%);
   filter:brightness(85%);
@@ -50,7 +50,7 @@
   color: rgb(212, 212, 212) !important;
 }
 
-[data-theme="dark"] #fh5co-resume h2 {
+[data-theme="dark"] #profile-resume h2 {
   color: white !important;
 }
 
@@ -62,35 +62,35 @@
   background-color: #333 !important;
 }
 
-[data-theme="dark"] #fh5co-resume .timeline-title {
+[data-theme="dark"] #profile-resume .timeline-title {
   color: white !important;
 }
 
-[data-theme="dark"] #fh5co-resume .company {
+[data-theme="dark"] #profile-resume .company {
   color: rgb(173, 173, 173) !important;
 }
 
-[data-theme="dark"] #fh5co-resume span {
+[data-theme="dark"] #profile-resume span {
   color: white !important;
 }
 
-[data-theme="dark"] #fh5co-features .feature-left .icon {
+[data-theme="dark"] #profile-features .feature-left .icon {
   background-color: #333 !important;
 }
 
-[data-theme="dark"] #fh5co-features .feature-left .icon i {
+[data-theme="dark"] #profile-features .feature-left .icon i {
   color: white !important;
 }
 
-[data-theme="dark"] #fh5co-skills h2 {
+[data-theme="dark"] #profile-skills h2 {
   color: white !important;
 }
 
-[data-theme="dark"] #fh5co-skills .img-learned {
+[data-theme="dark"] #profile-skills .img-learned {
   fill: white !important;
 }
 
-[data-theme="dark"] .fh5co-bg-dark {
+[data-theme="dark"] .profile-bg-dark {
   background: #0a0a0a !important;
 }
 

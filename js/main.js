@@ -113,9 +113,8 @@
 	};
 
 	var skillsWayPoint = function() {
-		if ($('#fh5co-skills').length > 0 ) {
-			$('#fh5co-skills').waypoint( function( direction ) {
-										
+		if ($('#profile-skills').length > 0 ) {
+			$('#profile-skills').waypoint( function( direction ) {										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 					setTimeout( pieChart , 400);					
 					$(this.element).addClass('animated');
@@ -128,7 +127,7 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(".fh5co-loader").fadeOut("slow");
+		$(".profile-loader").fadeOut("slow");
 	};
 
 	
@@ -137,9 +136,9 @@
 		goToTop();
 		loaderPage();
 		fullHeight();
-		parallax();
+		// parallax();
 		// pieChart();
-		skillsWayPoint();
+		// skillsWayPoint();
 	});
 
 
