@@ -91,7 +91,9 @@
 }
 
 [data-theme="dark"] .profile-bg-dark {
-  background: #0a0a0a !important;
+  background: url(../images/background-dark.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 [data-theme="dark"] .darkmode a {

@@ -250,9 +250,6 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: 20px !important;
 }
 
-#profile-features {
-  background: #39475C;
-}
 #profile-features h2 {
   color: #fff;
 }
@@ -336,8 +333,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .profile-bg-dark {
-  background: #2F3C4F;
-  background: #39475C;
+  background: url(../images/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .profile-bg-dark .profile-heading h2 {
   color: #fff !important;
