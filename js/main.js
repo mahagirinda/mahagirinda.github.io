@@ -31,11 +31,6 @@
 		});
 	};
 
-	// Parallax
-	var parallax = function() {
-		$(window).stellar();
-	};
-
 	var contentWayPoint = function() {
 		var i = 0;
 		$('.animate-box').waypoint( function( direction ) {
@@ -100,30 +95,6 @@
 	
 	};
 
-	var pieChart = function() {
-		$('.chart').easyPieChart({
-			scaleColor: false,
-			lineWidth: 4,
-			lineCap: 'butt',
-			barColor: '#39475C',
-			trackColor:	"#f5f5f5",
-			size: 160,
-			animate: 1000
-		});
-	};
-
-	var skillsWayPoint = function() {
-		if ($('#profile-skills').length > 0 ) {
-			$('#profile-skills').waypoint( function( direction ) {										
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( pieChart , 400);					
-					$(this.element).addClass('animated');
-				}
-			} , { offset: '90%' } );
-		}
-
-	};
-
 
 	// Loading page
 	var loaderPage = function() {
@@ -134,11 +105,8 @@
 	$(function(){
 		contentWayPoint();
 		goToTop();
-		loaderPage();
 		fullHeight();
-		// parallax();
-		// pieChart();
-		// skillsWayPoint();
+		loaderPage();
 	});
 
 
