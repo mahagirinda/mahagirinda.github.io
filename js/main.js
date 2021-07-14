@@ -98,7 +98,12 @@
 
 	// Loading page
 	var loaderPage = function() {
-		$(".profile-loader").fadeOut("slow");
+		var image = new Image();		
+		image.src = 'images/user-1.jpg';
+
+		image.onload = function () {			
+			$(".profile-loader").fadeOut("slow");
+		};		
 	};
 
 	
