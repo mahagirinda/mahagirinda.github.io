@@ -1389,6 +1389,11 @@ input[type="text"] {
   padding: 0px;
 }
 
+#url-project-1, #url-project-2, 
+#url-project-3, #url-project-4 {
+  cursor: pointer;
+}
+
 .arrow {
   position: fixed;
   display: block;

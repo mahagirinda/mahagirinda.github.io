@@ -95,6 +95,24 @@
 	
 	};
 
+	// Get project URL
+	var getProjectURL = function() {
+		$('#url-project-1').click(function() {
+			window.open("https://rental.iconplnbali.com");
+		});		
+		$('#url-project-2').click(function() {
+			window.open("https://assets.iconplnbali.com");
+		});
+		
+		$('#url-project-3').click(function() {
+			window.open("https://twohearts.id");
+		});
+		
+		$('#url-project-4').click(function() {
+			window.open("https://mhprojects-bali.com");
+		});	
+	};
+
 
 	// Loading page
 	var loaderPage = function() {
@@ -111,6 +129,7 @@
 		contentWayPoint();
 		goToTop();
 		fullHeight();
+		getProjectURL();
 		loaderPage();
 	});
 
