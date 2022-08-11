@@ -26,8 +26,8 @@
 body {
   font-family: "Space Mono", Arial, serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 1.4rem;
+  line-height: 1.5;
   color: #4d4d4d;
   background: #fff;
 }
@@ -450,13 +450,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .profile-heading {
-  margin-bottom: 4em;
+  margin-bottom: 1.2em;
 }
 .profile-heading.profile-heading-sm {
   margin-bottom: 2em;
 }
 .profile-heading h2 {
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 20px;
   line-height: 1.5;
   color: #000;
@@ -952,7 +952,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-right: 5px;
 }
 .profile-blog .blog-text h3 {
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 20px;
   line-height: 1.5;
 }
@@ -1374,7 +1374,7 @@ input[type="text"] {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/loader.gif) center no-repeat #fff;
+  background: url(../images/loader.svg) center no-repeat #fff;
 }
 
 .js .animate-box {

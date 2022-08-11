@@ -88,15 +88,10 @@
 				<div class="col-md-8">
 					<h2 class="animate-box">Hello!</h2>
 					<p class="animate-box">
-						My name’s Putu Maha Girinda Praba, my fiends also called me Maha. 
-						As you know, I'm one of millions millenials generation who was born in 1997 from a family 
-						who taught me a lot about struggling and grateful.
-						I'm the oldest child of my three siblings. 
-						In Bali, the oldest one are usually given with meaningful first name like Putu, Gede, or Wayan.
+						My name’s Putu Maha Girinda Praba, my fiends also called me Maha. I am a very curious person to figure out and to explore the world of technology. 
+						Expecially in creative technology that making apps for mobile or desktop for many million people. 
 					</p>
 					<p class="animate-box">
-						I am a very curious person to figure out and to explore the world of technology. 
-						Expecially in creative technology that making apps for mobile or desktop for many million people. 
 						I graduated in diploma at Bali State of Polytechnic. My expertise is web design/programming, photo/video editing, logo design, and branding.
 						I would like to be very happy if my expertise could be useful for many people as their needs. If you want to, lets get in touch! 					
 					</p>
@@ -400,6 +395,20 @@
 					<div class="col-md-6 text-center animate-box">
 						<div class="feature-left">
 							<span class="icon">
+								<i class="icon-bargraph"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Web Development</h3>
+								<p>
+									I am able to developt a web application according to client needs <br>
+									<small class="desc-service-text">Expertise: Laravel Framework & MySQL Database</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 text-center animate-box">						
+						<div class="feature-left">
+							<span class="icon">
 								<i class="icon-paintbrush"></i>
 							</span>
 							<div class="feature-copy">
@@ -411,7 +420,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 text-center animate-box">
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 text-center animate-box">						
 						<div class="feature-left">
 							<span class="icon">
 								<i class="icon-briefcase"></i>
@@ -421,23 +433,6 @@
 								<p>
 									I am able to improve brand edgagement on social media with branding design techniques & experience <br>
 									<small class="desc-service-text">Expertise: Adobe Photoshop, Illustrator, After Effects</small>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-md-4 text-center animate-box">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-bargraph"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Web Development</h3>
-								<p>
-									I am able to developt a web application according to client needs <br>
-									<small class="desc-service-text">Expertise: Laravel Framework & MySQL Database</small>
 								</p>
 							</div>
 						</div>
@@ -455,7 +450,6 @@
 								</p>
 							</div>
 						</div>
-
 					</div>
 					<div class="col-md-4 text-center animate-box">
 						<div class="feature-left">
@@ -576,9 +570,12 @@
 				<div class="col-md-12">
 					<p class="text-center">
 						<small>
-							&copy;2021 Developed & Designed with <i class="icon-heart"></i> <br>
-							by Maha Girinda
+							&copy;<span id="year-copyright"></span> Developed & Designed with <i class="icon-heart"></i> <br>
+							<small>by Maha Girinda</small>
 						</small>
+						<script>
+							document.getElementById("year-copyright").innerHTML = new Date().getFullYear();
+						</script>
 					</p>
 				</div>
 			</div>
