@@ -117,7 +117,7 @@
 	// Loading page
 	var loaderPage = function() {
 		var image = new Image();		
-		image.src = 'images/user-1.jpg';
+		image.src = 'images/user.jpg';
 
 		image.onload = function () {			
 			$(".profile-loader").fadeOut("slow");
