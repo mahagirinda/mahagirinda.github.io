@@ -66,10 +66,18 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     
     <!-- Production: Use built CSS -->
+    <link rel="preload" href="dist/output.css" as="style">
     <link href="dist/output.css" rel="stylesheet">
     <!-- Development: Uncomment below and comment above to use CDN -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Preload LCP image for faster rendering -->
+    <link rel="preload" as="image" href="images/me.webp" fetchpriority="high">
+    
+    <!-- Async Google Fonts loading to prevent render blocking -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"></noscript>
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -190,7 +198,7 @@
             <div class="mb-10">
                 <div class="relative inline-block">
                     <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 via-[#f2b938] to-blue-400 rounded-full blur opacity-30"></div>
-                    <img src="images/me.webp" alt="Maha Girinda" class="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover ring-4 ring-blue-500/30 shadow-2xl">
+                    <img src="images/me.webp" alt="Maha Girinda" class="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover ring-4 ring-blue-500/30 shadow-2xl" fetchpriority="high" decoding="async">
                 </div>
             </div>
             <p class="text-blue-300/80 text-sm font-medium mb-3 tracking-[0.3em] uppercase">Hello, I'm</p>
@@ -244,7 +252,9 @@
             <h3 class="max-w-6xl mx-auto text-xl font-semibold mb-6 text-white flex items-center gap-2"><span class="w-2 h-2 bg-blue-500 rounded-full"></span>Freelance & Personal Projects</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
                 <div class="group glass rounded-xl overflow-hidden hover-lift">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('images/portfolio-4.webp');"></div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/portfolio-4.webp" alt="Mahaprada Garage - Used motorcycle marketplace" class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
+                    </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold mb-2 group-hover:text-blue-400 transition-colors">Mahaprada Garage</h3>
                         <p class="text-slate-400 text-sm mb-4">Used motorcycle marketplace with complete features</p>
@@ -252,7 +262,9 @@
                     </div>
                 </div>
                 <div class="group glass rounded-xl overflow-hidden hover-lift">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('images/portfolio-5.webp');"></div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/portfolio-5.webp" alt="Custom Motor Marketplace - Custom motorcycle catalog" class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
+                    </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold mb-2 group-hover:text-blue-400 transition-colors">Custom Motor Marketplace</h3>
                         <p class="text-slate-400 text-sm mb-4">Custom motorcycle marketplace with comprehensive catalog</p>
@@ -260,7 +272,9 @@
                     </div>
                 </div>
                 <div class="group glass rounded-xl overflow-hidden hover-lift">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('images/portfolio-6.webp');"></div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/portfolio-6.webp" alt="Two Hearts CMS - Digital invitation platform" class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
+                    </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold mb-2 group-hover:text-blue-400 transition-colors">Two Hearts CMS</h3>
                         <p class="text-slate-400 text-sm mb-4">Digital invitation CMS with AI features & reseller management</p>
@@ -268,7 +282,9 @@
                     </div>
                 </div>
                 <div class="group glass rounded-xl overflow-hidden hover-lift">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('images/portfolio-2.webp');"></div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/portfolio-2.webp" alt="PLN Icon+ Rental App - Internal rental service application" class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
+                    </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold mb-2 group-hover:text-blue-400 transition-colors">PLN Icon+ Rental App</h3>
                         <p class="text-slate-400 text-sm mb-4">Web-based application for internal company rental services</p>
@@ -276,7 +292,9 @@
                     </div>
                 </div>
                 <div class="group glass rounded-xl overflow-hidden hover-lift">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('images/portfolio-1.webp');"></div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/portfolio-1.webp" alt="PLN Icon+ POP Management - Company POP monitoring" class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
+                    </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold mb-2 group-hover:text-blue-400 transition-colors">PLN Icon+ POP Management</h3>
                         <p class="text-slate-400 text-sm mb-4">Web-based application for managing & monitoring Company POP's</p>
@@ -284,7 +302,9 @@
                     </div>
                 </div>
                 <div class="group glass rounded-xl overflow-hidden hover-lift">
-                    <div class="h-48 bg-cover bg-center" style="background-image: url('images/portfolio-3.webp');"></div>
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/portfolio-3.webp" alt="Two Hearts ID Landing - Wedding invitation landing page" class="w-full h-full object-cover object-center" loading="lazy" decoding="async">
+                    </div>
                     <div class="p-6">
                         <h3 class="text-lg font-bold mb-2 group-hover:text-blue-400 transition-colors">Two Hearts ID Landing</h3>
                         <p class="text-slate-400 text-sm mb-4">Landing page website for Two Hearts ID</p>
