@@ -1,0 +1,13 @@
+{
+  "name": "mahagirinda-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npm run build:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

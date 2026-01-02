@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(-45deg, #020617, #0c1929, #1a1405, #0f2744, #0a1929);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+  }
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, #60a5fa, #3b82f6, #2563eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hover-lift {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
+  }
+  
+  .highlight {
+    background: linear-gradient(120deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.3) 100%);
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #93c5fd;
+  }
+  
+  .role-text {
+    animation: typing 0.5s ease-out forwards;
+  }
+  
+  .role-text.fade-out {
+    animation: fadeOut 0.3s ease-in forwards;
+  }
+}
+
+@layer utilities {
+  /* Light mode styles */
+  .light-mode {
+    background: #f8fafc !important;
+    color: #1e293b !important;
+  }
+  
+  .light-mode .gradient-bg {
+    background: linear-gradient(-45deg, #e0f2fe, #fef9e7, #bae6fd, #fcefc7, #e0f2fe) !important;
+  }
+  
+  .light-mode .glass {
+    background: rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  .light-mode .text-slate-400,
+  .light-mode .text-slate-500 {
+    color: #475569 !important;
+  }
+  
+  .light-mode .text-slate-300 {
+    color: #334155 !important;
+  }
+  
+  .light-mode .text-white {
+    color: #0f172a !important;
+  }
+  
+  .light-mode .text-blue-300\/80 {
+    color: #1e40af !important;
+  }
+  
+  .light-mode .text-gradient {
+    background: linear-gradient(135deg, #1e3a8a, #1d4ed8, #2563eb) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  
+  .light-mode .bg-slate-950,
+  .light-mode .bg-slate-950\/50 {
+    background: #f1f5f9 !important;
+  }
+  
+  .light-mode .border-slate-800 {
+    border-color: #e2e8f0 !important;
+  }
+  
+  .light-mode .highlight {
+    background: linear-gradient(120deg, rgba(59, 130, 246, 0.15) 0%, rgba(59, 130, 246, 0.25) 100%);
+    color: #1d4ed8;
+  }
+  
+  .light-mode .role-text {
+    color: #0f172a !important;
+  }
+
+  /* Hero section emphasis in light mode */
+  .light-mode .font-elegant {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Keep service icons white in light mode */
+  .light-mode .w-8.h-8 {
+    color: white !important;
+    stroke: white !important;
+  }
+
+  /* Keep email button text white in light mode */
+  .light-mode a[href^="mailto"] {
+    color: white !important;
+  }
+}
+
+/* Animations */
+@keyframes typing {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Scrollbar */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e40af;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
