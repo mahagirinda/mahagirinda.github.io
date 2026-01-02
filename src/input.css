@@ -166,3 +166,46 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #2563eb;
 }
+
+/* Mobile Highlights Marquee Slider */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.highlights-slider {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.highlights-track {
+  display: flex;
+  gap: 1rem;
+  animation: marquee 15s linear infinite;
+  width: max-content;
+}
+
+.highlights-track:hover {
+  animation-play-state: paused;
+}
+
+@media (min-width: 768px) {
+  .highlights-slider {
+    overflow: visible;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  
+  .highlights-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    width: auto;
+  }
+}
